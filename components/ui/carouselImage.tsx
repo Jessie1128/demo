@@ -10,6 +10,7 @@ const CarouselImage = ({ news }: { news: NewsDetail }) => {
         blurDataURL={defaultImageString}
         src={news.image}
         alt={news.title}
+        className="object-cover"
         fill
         priority
       />
