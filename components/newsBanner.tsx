@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-import NewsList from "./newsList";
-import NewsCarousel from "./newsCarousel";
 import { NewsCategory, NewsCategoryType, NewsDetail } from "@/lib/types";
 import { usePathname } from "next/navigation";
+import NewsCarousel from "./newsCarousel";
+import NewsList from "./newsList";
 
 const NewsBanner = ({ newsList }: { newsList: NewsDetail[] }) => {
   const pathname = usePathname();
@@ -23,12 +22,11 @@ const NewsBanner = ({ newsList }: { newsList: NewsDetail[] }) => {
 
   return (
     <section className="relative w-full h-[800px] md:h-[600px] overflow-hidden bg-demo-primary py-8 md:py-0">
-      {/* 背景主播圖 */}
       <Image
         src={categories ? images[categories as NewsCategoryType] || "" : ""}
         alt="banner"
         fill
-        className="object-cover opacity-40 z-10" // 確保背景在最底層
+        className="object-cover opacity-40 z-10"
         priority
       />
 

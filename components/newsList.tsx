@@ -12,7 +12,6 @@ const NewsList = ({ newsList }: { newsList: NewsDetail[] }) => {
         </h2>
       </div>
 
-      {/* News List */}
       <div className="flex-1 space-y-6 overflow-y-auto max-h-[500px] pr-2 scrollbar-thin scrollbar-thumb-primary/20">
         {newsList.map((news) => (
           <div key={news.id} className="flex gap-4 group cursor-pointer">
@@ -53,7 +52,6 @@ const NewsList = ({ newsList }: { newsList: NewsDetail[] }) => {
         ))}
       </div>
 
-      {/* Footer Button */}
       <button className="cursor-pointer inline-flex items-center justify-between gap-2 whitespace-nowrap text-sm font-medium hover-elevate active-elevate-2 border-t border-border mt-6 w-full py-4 group hover:text-primary transition-colors">
         <span className="text-xs font-bold uppercase tracking-widest">
           Read more

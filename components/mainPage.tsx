@@ -1,8 +1,8 @@
 import { NewsDetail } from "@/lib/types";
 import CustomSpinner from "./customSpinner";
 import NewsCard from "./newsCard";
-import NewsBanner from "./ui/newsBanner";
 import { RefObject } from "react";
+import NewsBanner from "./newsBanner";
 
 type MainPageProps = {
   originalList: NewsDetail[];
